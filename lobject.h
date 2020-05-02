@@ -213,7 +213,7 @@ typedef union TString {
 
 
 typedef union Udata {
-  L_Umaxalign dummy;  /* ensures maximum alignment for `local' udata */
+  long double dummy;  /* ensures maximum alignment for `local' udata */
   struct {
     CommonHeader;
     struct Table *metatable;
